@@ -1,0 +1,30 @@
+<!--
+ Copyright (c) 2014, 2018, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+<div class="oj-hybrid-padding">
+  	<div class="oj-flex-bar onion-module-header">
+  	 <div class="oj-flex-bar-item">
+      <h1 class="onion-module-header-text">Customers</h1>
+     </div>
+     <div class="oj-flex-item-bar-end">
+      <oj-input-text id="clear-icon-always" value="{{searchFor}}" class="searchBox"
+      clear-icon="always" class="searchBox"></oj-input-text> 
+     </div>
+   </div>
+  
+  <div class="oj-panel">
+      <div class="oj-xl-8 oj-lg-8 oj-md-6 oj-flex-item">
+                <oj-table id='table' aria-label='Departments Table'
+                   data='[[pagingDatasource]]'
+                   columns='[{"headerText": "Department Id", "field": "DepartmentId","headerClassName": "oj-sm-only-hide","className": "oj-sm-only-hide","resizable": "enabled"},
+                             {"headerText": "Department Name", "field": "DepartmentName"},
+                             {"headerText": "Location Id", "field": "LocationId","headerClassName": "oj-sm-only-hide","className": "oj-sm-only-hide","resizable": "enabled"},
+                             {"headerText": "Manager Id", "field": "ManagerId"}]' 
+                   style='width: 100%;'>
+                <oj-paging-control id="paging" data='[[pagingDatasource]]' page-size='10' slot='bottom'>
+                </oj-paging-control>
+            </oj-table>
+            </div>
+  </div>
+</div>

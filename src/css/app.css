@@ -1,0 +1,30 @@
+/*
+    Document   : override
+    Created on : <date>
+    Author     : <author>
+    Description:
+        This is where any of your application specific styles should be included
+*/
+.onion-module-header1{
+ background-color: #0096E0;
+ height:100px;
+ margin-bottom: 10px;
+}
+.onion-module-header{
+ background-color: #0096E0;
+ height:100px;
+ display: -webkit-flex; /* Safari */
+ -webkit-align-items: center; /* Safari 7.0+ */
+ display: flex;
+ align-items: center;
+ margin-bottom: 10px;
+}
+
+h1.onion-module-header-text{
+	color:#FBFDFF;
+	padding-left: 10px;
+}
+
+.searchBox{
+  margin:10px 10px 10px 10px;
+ }
